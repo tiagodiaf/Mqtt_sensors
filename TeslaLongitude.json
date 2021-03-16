@@ -1,6 +1,6 @@
 {
-    "name": "TeslaLatitude",
-    "state_topic": "teslamate/cars/1/latitude",
+    "name": "TeslaLongitude",
+    "state_topic": "teslamate/cars/1/longitude",
     "unit_of_measurement": "º",
     "icon": "mdi:crosshairs-gps",
     "device": {
@@ -12,7 +12,5 @@
       "name": "My Tesla",
       "sw_version": "1.0.0.0"
     },
-    "unique_id": "cdeefb36-861f-4287-828b-81d6c853a261"
+    "unique_id": "56341faf-3eaf-44c0-87be-2ddcbc5ebfdd"
   }
-
-  
