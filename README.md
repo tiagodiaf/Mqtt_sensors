@@ -1,3 +1,5 @@
-# mqtt_broker_backup
-Backup de sensores criados em MQTT
-# tiago afonso
+# Tesla
+Create the following topics and publish the linked messages.
+
+## Topics:
+* [BatteryLevel](./BatteryLevel.json): homeassistant/sensor/TeslaBatteryLevel/config
