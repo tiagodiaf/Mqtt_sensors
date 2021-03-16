@@ -1,0 +1,16 @@
+{
+  "name": "TeslaBatteryLevel",
+  "state_topic": "teslamate/cars/1/battery_level",
+  "device_class": "battery",
+  "unit_of_measurement": "%",
+  "device": {
+    "manufacturer": "Tiago Afonso",
+    "identifiers": [
+      "faecccc6-0eb8-4653-a25b-713b29a6f210"
+    ],
+    "model": "Tesla",
+    "name": "My Tesla",
+    "sw_version": "1.0.0.0"
+  },
+  "unique_id": "ac81909e-0f64-4d70-aeb7-25704912538a"
+}
