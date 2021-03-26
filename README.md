@@ -9,7 +9,7 @@ Create the following topics and publish the linked messages.
 * [BatteryLevel](./BatteryLevel.json): homeassistant/sensor/TeslaBatteryLevel/config
 * [TeslaLatitude](./TeslaLatitude.json): homeassistant/sensor/TeslaLatitude/config
 * [TeslaLongitude](./TeslaLongitude.json): homeassistant/sensor/TeslaLongitude/config
-*[TeslaModel](./TeslaModel.json)
+* [TeslaModel](./TeslaModel.json)
 
 # Topicos a criar e verificar se existem +
 
