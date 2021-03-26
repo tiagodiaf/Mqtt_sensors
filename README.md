@@ -12,8 +12,6 @@ Create the following topics and publish the linked messages.
 
 # Topicos a criar e verificar se existem +
 
-# Topicos a criar e verificar se existem +
-
 latitude = 40.669399
 rated_battery_range_km = 303.47
 model = 3
