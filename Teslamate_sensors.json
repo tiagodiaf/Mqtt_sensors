@@ -1,18 +1,10 @@
 devices:
-  - device: {
-    "manufacturer": "Tiago Afonso",
-    "identifiers": ["faecccc6-0eb8-4653-a25b-713b29a6f210"],
-    "model": "Tesla",
-    "name": "My Tesla",
-    "sw_version": "1.0.0.0"},
+  - device: '{"manufacturer": "Tiago Afonso","identifiers": ["faecccc6-0eb8-4653-a25b-713b29a6f210"],"model": "Tesla","name": "Model 3","sw_version": "1.0.0.0"}'
     topics:
-    - topic: homeassistant/sensor/TeslaBatteryLevel/config
-      payload:'{
-        "name": "TeslaLatitude",
-        "state_topic": "teslamate/cars/1/latitude",
-        "unit_of_measurement": "º",
-        "icon": "mdi:crosshairs-gps",
-        device": ##device##},
-        "unique_id": "cdeefb36-861f-4287-828b-81d6c853a261"}'
-      retain: true
-   
+      - topic: homeassistant/sensor/ShellySalaWifiRSSI/config
+        payload: '{"name": "TeslaBatteryLevel","state_topic": "homeassistant/sensor/TeslaBatteryLevel/config", "device_class": "battery", "unit_of_measurement": "%", "unique_id": "b357d05e-30af-4f82-ae31-3ee225746a89", "device": ##device##}'
+        retain: true
+      - topic: homeassistant/binary_sensor/ShellyHasUpdate/config
+        payload: '{"name": "ShellySalaUpdateHasUpdate","state_topic": "states/Shelly/Sala/Update/HasUpdate","unique_id": "7403d6ec-2d78-4d4c-8125-7810f16e926b", "device": ##device##}'
+        retain: true
+  
