@@ -4,7 +4,5 @@ devices:
       - topic: homeassistant/sensor/ShellySalaWifiRSSI/config
         payload: '{"name": "TeslaBatteryLevel","state_topic": "homeassistant/sensor/TeslaBatteryLevel/config", "device_class": "battery", "unit_of_measurement": "%", "unique_id": "b357d05e-30af-4f82-ae31-3ee225746a89", "device": ##device##}'
         retain: true
-      - topic: homeassistant/binary_sensor/ShellyHasUpdate/config
-        payload: '{"name": "ShellySalaUpdateHasUpdate","state_topic": "states/Shelly/Sala/Update/HasUpdate","unique_id": "7403d6ec-2d78-4d4c-8125-7810f16e926b", "device": ##device##}'
-        retain: true
+
   
