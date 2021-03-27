@@ -2,13 +2,13 @@ devices:
   - device: '{"manufacturer": "Tiago Afonso","identifiers": ["faecccc6-0eb8-4653-a25b-713b29a6f210"],"model": "Model 3","name": "My Tesla","sw_version": "1.0.0.0"}'
     topics:
       - topic: homeassistant/sensor/TeslaBatteryLevel/config
-        payload: '{"name": "TeslaBatteryLevel","state_topic": "homeassistant/sensor/TeslaBatteryLevel/config", "device_class": "battery", "unit_of_measurement": "%", "unique_id": "b357d05e-30af-4f82-ae31-3ee225746a89", "device": ##device##}'
+        payload: '{"name": "TeslaBatteryLevel","state_topic": "teslamate/cars/1/battery_level", "device_class": "battery", "unit_of_measurement": "%", "unique_id": "b357d05e-30af-4f82-ae31-3ee225746a89", "device": ##device##}'
         retain: true
       - topic: homeassistant/sensor/TeslaLatitude/config
-        payload: '{"name": "TeslaLatitude","state_topic": "homeassistant/sensor/TeslaLatitude/config", "icon": "mdi:crosshairs-gps", "unit_of_measurement": "º", "unique_id": "cdeefb36-861f-4287-828b-81d6c853a261", "device": ##device##}'
+        payload: '{"name": "TeslaLatitude","state_topic": "teslamate/cars/1/latitude", "icon": "mdi:crosshairs-gps", "unit_of_measurement": "º", "unique_id": "cdeefb36-861f-4287-828b-81d6c853a261", "device": ##device##}'
         retain: true
       - topic: homeassistant/sensor/TeslaLongitude/config
-        payload: '{"name": "TeslaLongitude","state_topic": "homeassistant/sensor/TeslaLongitude/config", "icon": "mdi:crosshairs-gps", "unit_of_measurement": "º", "unique_id": "56341faf-3eaf-44c0-87be-2ddcbc5ebfdd", "device": ##device##}'
+        payload: '{"name": "TeslaLongitude","state_topic": "teslamate/cars/1/longitude", "icon": "mdi:crosshairs-gps", "unit_of_measurement": "º", "unique_id": "56341faf-3eaf-44c0-87be-2ddcbc5ebfdd", "device": ##device##}'
         retain: true
       - topic: homeassistant/sensor/TeslaGeofence/config
         payload: '{"name": "TeslaGeofence","state_topic": "teslamate/cars/1/geofence", "icon": "mdi:google-maps", "unique_id": "8a232d71-44be-465e-9aed-3219aa6f0e94", "device": ##device##}'
