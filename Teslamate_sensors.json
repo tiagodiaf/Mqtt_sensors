@@ -9,4 +9,7 @@ devices:
         retain: true
       - topic: homeassistant/sensor/TeslaLongitude/config
         payload: '{"name": "TeslaLongitude","state_topic": "homeassistant/sensor/TeslaLongitude/config", "icon": "mdi:crosshairs-gps", "unit_of_measurement": "º", "unique_id": "56341faf-3eaf-44c0-87be-2ddcbc5ebfdd", "device": ##device##}'
-        retain: true 
+        retain: true
+      - topic: homeassistant/sensor/TeslaGeofence/config
+        payload: '{"name": "TeslaGeofence","state_topic": "teslamate/cars/1/geofence", "icon": "mdiGoogleMaps", "unique_id": "8a232d71-44be-465e-9aed-3219aa6f0e94", "device": ##device##}'
+        retain: true  
