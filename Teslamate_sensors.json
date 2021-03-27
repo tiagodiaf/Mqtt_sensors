@@ -7,4 +7,6 @@ devices:
       - topic: homeassistant/sensor/TeslaLatitude/config
         payload: '{"name": "TeslaLatitude","state_topic": "homeassistant/sensor/TeslaLatitude/config", "icon": "mdi:crosshairs-gps", "unit_of_measurement": "º", "unique_id": "cdeefb36-861f-4287-828b-81d6c853a261", "device": ##device##}'
         retain: true
-  
+      - topic: homeassistant/sensor/TeslaLongitude/config
+        payload: '{"name": "TeslaLongitude","state_topic": "homeassistant/sensor/TeslaLongitude/config", "icon": "mdi:crosshairs-gps", "unit_of_measurement": "º", "unique_id": "56341faf-3eaf-44c0-87be-2ddcbc5ebfdd", "device": ##device##}'
+        retain: true 
