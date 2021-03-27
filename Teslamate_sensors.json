@@ -1,24 +1,18 @@
 devices:
-  - device: 
-    '{"manufacturer": "Pedro Miguel Fernandes",
-    "identifiers": ["7ae29cde-e902-4e72-8e3a-883b6b0907b0"],
-    "model": "Shelly",
-    "name": "Shelly - Sala",
-    "sw_version": "1.0.0.0"}'
+  - device: {
+    "manufacturer": "Tiago Afonso",
+    "identifiers": ["faecccc6-0eb8-4653-a25b-713b29a6f210"],
+    "model": "Tesla",
+    "name": "My Tesla",
+    "sw_version": "1.0.0.0"},
     topics:
-      - topic: homeassistant/sensor/ShellySalaWifiRSSI/config
-        payload: '{"name": "ShellySalaWifiRSSI","state_topic": "states/Shelly/Sala/Wifi/RSSI", "icon": "mdi:wifi", "unit_of_measurement": "dB", "unique_id": "b357d05e-30af-4f82-ae31-3ee225746a89", "device": ##device##}'
-        retain: true
-      - topic: homeassistant/binary_sensor/ShellyHasUpdate/config
-        payload: '{"name": "ShellySalaUpdateHasUpdate","state_topic": "states/Shelly/Sala/Update/HasUpdate","unique_id": "7403d6ec-2d78-4d4c-8125-7810f16e926b", "device": ##device##}'
-        retain: true
-  - device: '{"manufacturer": "Pedro Miguel Fernandes","identifiers": ["3550555a-2534-414a-8f05-92949bbe97ad"],"model": "Shelly","name": "Shelly - Sala 2","sw_version": "1.0.0.0"}'
-    topics:
-      - topic: homeassistant/sensor/ShellySalaWifiRSSI2/config
-        payload: '{"name": "ShellySalaWifiRSSI","state_topic": "states/Shelly/Sala/Wifi/RSSI", "icon": "mdi:wifi", "unit_of_measurement": "dB", "unique_id": "5d2f85ff-ad9e-4187-89e3-d908fde1c810", "device": ##device##}'
-        retain: true
-      - topic: homeassistant/binary_sensor/ShellyHasUpdate2/config
-        payload: '{"name": "ShellySalaUpdateHasUpdate","state_topic": "states/Shelly/Sala/Update/HasUpdate","unique_id": "6dfdd821-0e8b-4fb1-83c1-ca2a5db1e46e", "device": ##device##}'
-        retain: true
-
-
+    - topic: homeassistant/sensor/TeslaBatteryLevel/config
+      payload:'{
+        "name": "TeslaLatitude",
+        "state_topic": "teslamate/cars/1/latitude",
+        "unit_of_measurement": "º",
+        "icon": "mdi:crosshairs-gps",
+        device": ##device##},
+        "unique_id": "cdeefb36-861f-4287-828b-81d6c853a261"}'
+      retain: true
+   
