@@ -5,11 +5,9 @@ Create the following topics and publish the linked messages.
 * [GUID-Generator](https://www.guidgenerator.com/)
 
 
-## Tesla Topics:
-* [BatteryLevel](./BatteryLevel.json): homeassistant/sensor/TeslaBatteryLevel/config
-* [TeslaLatitude](./TeslaLatitude.json): homeassistant/sensor/TeslaLatitude/config
-* [TeslaLongitude](./TeslaLongitude.json): homeassistant/sensor/TeslaLongitude/config
-* [TeslaModel](./TeslaModel.json)
+## Sensors:
+* [Tesla Sensors](./TESLA_Sensors.json): Sensores obtidos pelo teslamate (Mqtt)
+
 
 # Topicos a criar e verificar se existem +
 
