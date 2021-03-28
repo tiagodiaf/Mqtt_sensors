@@ -12,4 +12,8 @@ devices:
         retain: true
       - topic: homeassistant/sensor/TeslaGeofence/config
         payload: '{"name": "TeslaGeofence","state_topic": "teslamate/cars/1/geofence", "icon": "mdi:google-maps", "unique_id": "8a232d71-44be-465e-9aed-3219aa6f0e94", "device": ##device##}'
-        retain: true  
+        retain: true
+      - topic: homeassistant/sensor/TeslaState/config
+        payload: '{"name": "TeslaState","state_topic": "teslamate/cars/1/state", "icon": "mdi:car-connected", "unique_id": "e64b185c-def2-43ca-87d4-63070808ea3e", "device": ##device##}'
+        retain: true   
+
