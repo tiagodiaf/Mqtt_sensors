@@ -24,5 +24,5 @@ devices:
         retain: true
 
       - topic: homeassistant/sensor/TeslaPlugIN/config
-        payload: '{"name": "TeslaPlugIN","state_topic": "teslamate/cars/1/plugged_in","icon": "mdi:power-plug", "unique_id": "22690771-36d3-4b36-821a-812059e109dc", "device": ##device##}'
+        payload: '{"name": "TeslaPlugIN","state_topic": "teslamate/cars/1/plugged_in", "unit_of_measurement": "A","icon": "mdi:power-plug", "unique_id": "22690771-36d3-4b36-821a-812059e109dc", "device": ##device##}'
         retain: true
