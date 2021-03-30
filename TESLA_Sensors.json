@@ -18,4 +18,9 @@ devices:
         retain: true   
 
 
-      
+
+
+
+        - topic: homeassistant/sensor/TeslaName/config
+        payload: '{"name": "TeslaName","state_topic": "teslamate/cars/1/display_name", "unique_id": "63284776-5554-4633-beee-7f55e704ad07", "device": ##device##}'
+        retain: true
