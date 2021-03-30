@@ -1,18 +1,15 @@
 # TeslaMate MQTT Integration - HomeAssistant
 
-# Necessário
-* Broker MQTT
-* Node-Red
-* Homeassistant
-
-
 ## Apoios:
 * [GUID-Generator](https://www.guidgenerator.com/)
 * [TeslaMate] (https://docs.teslamate.org/docs/integrations/home_assistant)
 
-
 ## Sensors:
 * [Tesla Sensors](./TESLA_Sensors.json): Sensores obtidos pelo teslamate (Mqtt)
+
+
+## Criar os sensores - NodeRed
+
 
 
 # Topicos a criar e verificar se existem +
