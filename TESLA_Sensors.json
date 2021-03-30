@@ -20,9 +20,9 @@ devices:
         payload: '{"name": "TeslaState","state_topic": "teslamate/cars/1/state", "icon": "mdi:car-connected", "unique_id": "e64b185c-def2-43ca-87d4-63070808ea3e", "device": ##device##}'
         retain: true   
       - topic: homeassistant/sensor/TeslaChargerAtualCurrent/config
-        payload: '{"name": "TeslaChargerAtualCurrent","state_topic": "teslamate/cars/1/charger_actual_current","icon": "mdi:current-ac", "unique_id": "eec1f7b3-fe17-4f59-a6e3-4423c754d2d3", "device": ##device##}'
+        payload: '{"name": "TeslaChargerAtualCurrent","state_topic": "teslamate/cars/1/charger_actual_current", "unit_of_measurement": "A", "icon": "mdi:current-ac", "unique_id": "eec1f7b3-fe17-4f59-a6e3-4423c754d2d3", "device": ##device##}'
         retain: true
 
       - topic: homeassistant/sensor/TeslaPlugIN/config
-        payload: '{"name": "TeslaPlugIN","state_topic": "teslamate/cars/1/plugged_in", "unit_of_measurement": "A","icon": "mdi:power-plug", "unique_id": "22690771-36d3-4b36-821a-812059e109dc", "device": ##device##}'
+        payload: '{"name": "TeslaPlugIN","state_topic": "teslamate/cars/1/plugged_in","icon": "mdi:power-plug", "unique_id": "22690771-36d3-4b36-821a-812059e109dc", "device": ##device##}'
         retain: true
