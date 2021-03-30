@@ -1,6 +1,9 @@
 devices:
   - device: '{"manufacturer": "Tiago Afonso","identifiers": ["faecccc6-0eb8-4653-a25b-713b29a6f210"],"model": "Model 3","name": "My Tesla","sw_version": "1.0.0.0"}'
     topics:
+      - topic: homeassistant/sensor/TeslaName/config
+        payload: '{"name": "TeslaName","state_topic": "teslamate/cars/1/display_name","icon": "mdi:car", "unique_id": "63284776-5554-4633-beee-7f55e704ad07", "device": ##device##}'
+        retain: true      
       - topic: homeassistant/sensor/TeslaBatteryLevel/config
         payload: '{"name": "TeslaBatteryLevel","state_topic": "teslamate/cars/1/battery_level", "device_class": "battery", "unit_of_measurement": "%", "unique_id": "b357d05e-30af-4f82-ae31-3ee225746a89", "device": ##device##}'
         retain: true
@@ -18,7 +21,9 @@ devices:
         retain: true   
 
 
-
-      - topic: homeassistant/sensor/TeslaName/config
-        payload: '{"name": "TeslaName","state_topic": "teslamate/cars/1/display_name","icon": "mdi:car", "unique_id": "63284776-5554-4633-beee-7f55e704ad07", "device": ##device##}'
+      - topic: homeassistant/sensor/TeslaChargerAtualCurrent/config
+        payload: '{"name": "TeslaChargerAtualCurrent","state_topic": "teslamate/cars/1/charger_actual_current","icon": "mdi:CurrentAc", "unique_id": "eec1f7b3-fe17-4f59-a6e3-4423c754d2d3", "device": ##device##}'
         retain: true
+
+
+
