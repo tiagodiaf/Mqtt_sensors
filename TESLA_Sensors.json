@@ -24,9 +24,9 @@ devices:
         retain: true
 
       - topic: homeassistant/sensor/TeslaPlugIN/config
-        payload: '{"name": "Tesla Plug In","state_topic": "teslamate/cars/1/plugged_in","icon": "mdi:power-plug", "unique_id": "22690771-36d3-4b36-821a-812059e109dc", "device": ##device##}'
+        payload: '{"name": "Tesla Plug In","state_topic": "teslamate/cars/1/plugged_in","device_class": "battery", "unique_id": "22690771-36d3-4b36-821a-812059e109dc", "device": ##device##}'
         retain: true
 
       - topic: homeassistant/sensor/TeslaUpdateVersion/config
-        payload: '{"name": "Tesla Update Version","state_topic": "teslamate/cars/1/update_version","unique_id": "78ae720b-2359-458e-8124-08e5a2ca2166", "device": ##device##}'
+        payload: '{"name": "Tesla Update Version","state_topic": "teslamate/cars/1/update_version","icon": "mdi:update", "unique_id": "78ae720b-2359-458e-8124-08e5a2ca2166", "device": ##device##}'
         retain: true
