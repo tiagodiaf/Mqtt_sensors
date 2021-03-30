@@ -1,8 +1,14 @@
-# MQTT
-Create the following topics and publish the linked messages.
+# TeslaMate MQTT Integration - HomeAssistant
+
+# Necessário
+* Broker MQTT
+* Node-Red
+* Homeassistant
+
 
 ## Apoios:
 * [GUID-Generator](https://www.guidgenerator.com/)
+* [TeslaMate] (https://docs.teslamate.org/docs/integrations/home_assistant)
 
 
 ## Sensors:
@@ -10,6 +16,12 @@ Create the following topics and publish the linked messages.
 
 
 # Topicos a criar e verificar se existem +
+
+
+https://gist.github.com/ngardiner/0cbb6b87142aba044596426c8a21581c
+
+
+
 
 latitude = 40.669399
 rated_battery_range_km = 303.47
