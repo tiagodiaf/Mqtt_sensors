@@ -17,3 +17,5 @@ devices:
         payload: '{"name": "TeslaState","state_topic": "teslamate/cars/1/state", "icon": "mdi:car-connected", "unique_id": "e64b185c-def2-43ca-87d4-63070808ea3e", "device": ##device##}'
         retain: true   
 
+
+      
