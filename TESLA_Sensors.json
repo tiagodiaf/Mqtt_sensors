@@ -27,6 +27,6 @@ devices:
         payload: '{"name": "Tesla Plug In","state_topic": "teslamate/cars/1/plugged_in", "unique_id": "935328c1-9673-4e1e-b7b1-803b48f87f68", "device": ##device##}'
         retain: true
 
-      - topic: homeassistant/sensor/TeslaUpdateVersion/config
+      - topic: homeassistant/sensor/TeslaUpdateVersion2/config
         payload: '{"name": "Tesla Update Version","state_topic": "teslamate/cars/1/update_version","icon": "mdi:update", "unique_id": "78ae720b-2359-458e-8124-08e5a2ca2166", "device": ##device##}'
         retain: true
