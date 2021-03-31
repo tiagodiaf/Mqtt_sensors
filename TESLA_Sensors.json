@@ -22,11 +22,9 @@ devices:
       - topic: homeassistant/sensor/TeslaChargerAtualCurrent/config
         payload: '{"name": "Tesla Charger Atual Current","state_topic": "teslamate/cars/1/charger_actual_current", "unit_of_measurement": "A", "icon": "mdi:current-ac", "unique_id": "eec1f7b3-fe17-4f59-a6e3-4423c754d2d3", "device": ##device##}'
         retain: true
-
       - topic: homeassistant/sensor/TeslaPlug/config
-        payload: '{"name": "Tesla Plug","state_topic": "teslamate/cars/1/plugged_in", "unique_id": "935328c1-9673-4e1e-b7b1-803b48f87f68", "device": ##device##}'
+        payload: '{"name": "Tesla Plug","state_topic": "teslamate/cars/1/plugged_in", "device_class": "plug", "unique_id": "935328c1-9673-4e1e-b7b1-803b48f87f68", "device": ##device##}'
         retain: true
-
       - topic: homeassistant/sensor/TeslaUpdateVersion/config
         payload: '{"name": "Tesla Update Version","state_topic": "teslamate/cars/1/update_version","icon": "mdi:update", "unique_id": "78ae720b-2359-458e-8124-08e5a2ca2166", "device": ##device##}'
         retain: true
