@@ -35,7 +35,7 @@ devices:
       - topic: homeassistant/sensor/TeslaUpdateAvaiable/config
         payload: '{"name": "Tesla Update Available","state_topic": "teslamate/cars/1/update_available","icon": "mdi:update", "unique_id": "9e03a0fe-a97b-456d-842a-d32314159e19", "device": ##device##}'
         retain: true
-        - topic: homeassistant/sensor/TeslaSpeed/config
+      - topic: homeassistant/sensor/TeslaSpeed/config
         payload: '{"name": "Tesla Speed","state_topic": "teslamate/cars/1/speed","icon": "mdi:speedometer", "unit_of_measurement": "Km/h", "unique_id": "7c8ad6ad-648c-4999-a084-15e7637d16dc", "device": ##device##}'
         retain: true
 
