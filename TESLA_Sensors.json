@@ -23,8 +23,31 @@ devices:
         payload: '{"name": "Tesla Charger Atual Current","state_topic": "teslamate/cars/1/charger_actual_current", "unit_of_measurement": "A", "icon": "mdi:current-ac", "unique_id": "eec1f7b3-fe17-4f59-a6e3-4423c754d2d3", "device": ##device##}'
         retain: true
       - topic: homeassistant/sensor/TeslaPlug/config
-        payload: '{"name": "Tesla Plug","state_topic": "teslamate/cars/1/plugged_in", "device_class": "plug", "unique_id": "935328c1-9673-4e1e-b7b1-803b48f87f68", "device": ##device##}'
+        payload: '{"name": "Tesla Plug","state_topic": "teslamate/cars/1/plugged_in", "icon": "mdi:ev-plug-ccs2", "unique_id": "935328c1-9673-4e1e-b7b1-803b48f87f68", "device": ##device##}'
         retain: true
       - topic: homeassistant/sensor/TeslaUpdateVersion/config
         payload: '{"name": "Tesla Update Version","state_topic": "teslamate/cars/1/update_version","icon": "mdi:update", "unique_id": "78ae720b-2359-458e-8124-08e5a2ca2166", "device": ##device##}'
         retain: true
+
+      - topic: homeassistant/sensor/TeslaVersion/config
+        payload: '{"name": "Tesla Version","state_topic": "teslamate/cars/1/version","icon": "mdi:update", "unique_id": "b1c02193-ebf5-4cd8-bb09-71cce0474bca", "device": ##device##}'
+        retain: true
+      - topic: homeassistant/sensor/TeslaUpdateAvaiable/config
+        payload: '{"name": "Tesla Update Available","state_topic": "teslamate/cars/1/update_available","icon": "mdi:update", "unique_id": "9e03a0fe-a97b-456d-842a-d32314159e19", "device": ##device##}'
+        retain: true
+        - topic: homeassistant/sensor/TeslaSpeed/config
+        payload: '{"name": "Tesla Speed","state_topic": "teslamate/cars/1/speed","icon": "mdi:speedometer", "unit_of_measurement": "Km/h", "unique_id": "7c8ad6ad-648c-4999-a084-15e7637d16dc", "device": ##device##}'
+        retain: true
+
+      - topic: homeassistant/sensor/TeslaLastStatusUpdate/config
+        payload: '{"name": "Tesla Última Atualização","state_topic": "teslamate/cars/1/since","icon": "mdi:update", "unique_id": "b6197571-547a-415e-b3e7-5eceaba12a26", "device": ##device##}'
+        retain: true
+
+      - topic: homeassistant/sensor/TeslaServerLogin/config
+        payload: '{"name": "Tesla Server Login","state_topic": "teslamate/cars/1/healthy","device_class": "connectivity", "unique_id": "916412cb-1d15-419e-b214-b39b1e8ed097", "device": ##device##}'
+        retain: true
+       
+
+
+
+        
