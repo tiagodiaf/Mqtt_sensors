@@ -44,7 +44,7 @@ devices:
         retain: true
 
       - topic: homeassistant/sensor/TeslaServerLogin/config
-        payload: '{"name": "Tesla Server Login","state_topic": "teslamate/cars/1/healthy","icon": "mdi:login-variant", "unique_id": "916412cb-1d15-419e-b214-b39b1e8ed097", "device": ##device##}'
+        payload: '{"name": "Tesla Server Login","state_topic": "teslamate/cars/1/healthy","device_class": "connectivity", "unique_id": "916412cb-1d15-419e-b214-b39b1e8ed097", "device": ##device##}'
         retain: true
        
 
