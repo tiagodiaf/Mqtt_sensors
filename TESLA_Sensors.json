@@ -40,7 +40,7 @@ devices:
         retain: true
 
       - topic: homeassistant/sensor/TeslaLastStatusUpdate/config
-        payload: '{"name": "Tesla Última Atualização","state_topic": "teslamate/cars/1/since","icon": "mdi:update", "unique_id": "b6197571-547a-415e-b3e7-5eceaba12a26", "device": ##device##}'
+        payload: '{"name": "Tesla Última Atualização","state_topic": "teslamate/cars/1/since","device_class": "timestamp", "unique_id": "b6197571-547a-415e-b3e7-5eceaba12a26", "device": ##device##}'
         retain: true
 
       - topic: homeassistant/sensor/TeslaServerLogin/config
