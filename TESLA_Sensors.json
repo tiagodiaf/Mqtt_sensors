@@ -41,14 +41,14 @@ devices:
         payload: '{"name": "Tesla Última Atualização","state_topic": "teslamate/cars/1/since","device_class": "timestamp", "unique_id": "b6197571-547a-415e-b3e7-5eceaba12a26", "device": ##device##}'
         retain: true
       - topic: homeassistant/sensor/TeslaServerLogin/config
-        payload: '{"name": "Tesla Server Login","state_topic": "teslamate/cars/1/healthy","device_class": "connectivity", "unique_id": "916412cb-1d15-419e-b214-b39b1e8ed097", "device": ##device##}'
+        payload: '{"name": "Tesla Server Login","state_topic": "teslamate/cars/1/healthy","payload_on": "true", "payload_off": "false","device_class": "connectivity", "unique_id": "916412cb-1d15-419e-b214-b39b1e8ed097", "device": ##device##}'
         retain: true
       - topic: homeassistant/sensor/TeslaCarDirection/config
         payload: '{"name": "Tesla Rumo","state_topic": "teslamate/cars/1/heading","icon": "mdi:navigation", "unit_of_measurement": "º", "unique_id": "15b3d6e4-d44d-4fee-a42a-14cfbe323bd3", "device": ##device##}'
         retain: true
 
       - topic: homeassistant/sensor/TeslaTrunk/config
-        payload: '{"name": "Tesla Trunk","state_topic": "teslamate/cars/1/trunk_open","device_class": "opening", "unique_id": "68e954e0-a830-4e23-825e-61c59ad1f0dd", "device": ##device##}'
+        payload: '{"name": "Tesla Trunk","state_topic": "teslamate/cars/1/trunk_open","icon": "car-door", "unique_id": "68e954e0-a830-4e23-825e-61c59ad1f0dd", "device": ##device##}'
         retain: true
 
         
