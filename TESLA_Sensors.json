@@ -46,9 +46,21 @@ devices:
       - topic: homeassistant/sensor/TeslaCarDirection/config
         payload: '{"name": "Tesla Rumo","state_topic": "teslamate/cars/1/heading","icon": "mdi:navigation", "unit_of_measurement": "º", "unique_id": "15b3d6e4-d44d-4fee-a42a-14cfbe323bd3", "device": ##device##}'
         retain: true
-
       - topic: homeassistant/sensor/TeslaTrunk/config
-        payload: '{"name": "Tesla Trunk","state_topic": "teslamate/cars/1/trunk_open","icon": "car-door", "unique_id": "68e954e0-a830-4e23-825e-61c59ad1f0dd", "device": ##device##}'
+        payload: '{"name": "Tesla Trunk","state_topic": "teslamate/cars/1/trunk_open","icon": "mdi:car-door", "unique_id": "85e76de4-627e-444a-a9b7-7c122e16ae52", "device": ##device##}'
         retain: true
-
-        
+      - topic: homeassistant/sensor/TeslaDoors/config
+        payload: '{"name": "Tesla Doors","state_topic": "teslamate/cars/1/doors_open","icon": "mdi:car-door", "unique_id": "481854cb-da18-48df-a4f8-c94d555f9cd5", "device": ##device##}'
+        retain: true
+      - topic: homeassistant/sensor/TeslaFrunk/config
+        payload: '{"name": "Tesla Frunk","state_topic": "teslamate/cars/1/frunk_open","icon": "mdi:car-door", "unique_id": "209f39c0-b8b9-4060-aeb6-277b27321bde", "device": ##device##}'
+        retain: true
+      - topic: homeassistant/sensor/TeslaChargeDoor/config
+        payload: '{"name": "Tesla Charge Door","state_topic": "teslamate/cars/1/charge_port_door_open","icon": "mdi:ev-station", "unique_id": "3bff18b9-bccf-4f1d-a92e-a5465ba572bf", "device": ##device##}'
+        retain: true
+      - topic: homeassistant/sensor/TeslaWindows/config
+        payload: '{"name": "Tesla Windows","state_topic": "teslamate/cars/1/windows_open","icon": "mdi:car-door", "unique_id": "d306e4ea-6d9e-47ad-8aed-a80622916e44", "device": ##device##}'
+        retain: true
+      - topic: homeassistant/sensor/TeslaOdometer/config
+        payload: '{"name": "Tesla Odometro","state_topic": "teslamate/cars/1/odometer","icon": "mdi:counter", "unit_of_measurement": "Km", "unique_id": "97e1db7c-0a27-4d85-b7f0-840dc3d92204", "device": ##device##}'
+        retain: true
