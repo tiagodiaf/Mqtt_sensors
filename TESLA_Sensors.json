@@ -64,3 +64,6 @@ devices:
       - topic: homeassistant/sensor/TeslaOdometer/config
         payload: '{"name": "Tesla Odometro","state_topic": "teslamate/cars/1/odometer","icon": "mdi:counter", "unit_of_measurement": "Km", "unique_id": "97e1db7c-0a27-4d85-b7f0-840dc3d92204", "device": ##device##}'
         retain: true
+      - topic: homeassistant/sensor/TeslaLocked/config
+        payload: '{"name": "Tesla Locked","state_topic": "teslamate/cars/1/locked","icon": "mdi:car-door-lock", "unique_id": "20b6cb75-e8df-4e2a-b3f7-17b49f5c7e9b", "device": ##device##}'
+        retain: true
